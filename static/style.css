@@ -1,0 +1,344 @@
+/* Setting up background image */
+body {
+	background: url("/static/night.jpg") fixed no-repeat;
+	background-size: cover;
+}
+
+/* Editing the navigation bar */
+.navbar-text {
+	padding-left: 30px;
+	letter-spacing: 10px;
+	font-size: 1.8em;
+}
+
+.nav-link {
+	letter-spacing: 3px;
+	font-weight: 600;
+	padding-right: 25px !important;
+}
+
+/* Main contents */
+/* To display the frost effect as the background of the main content and responsive */
+/* Media query for mobile phone display */
+@media screen and (max-width: 579px) {
+	.container {
+		width: 100vw;
+		height: 2800px;
+		background: inherit;
+		position: absolute;
+		overflow: hidden;
+		margin-top: 150px;
+	}
+
+	.container:before {
+		width: 100vw;
+		height: 2850px;
+		content: "";
+		background: inherit;
+		position: absolute;
+		box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.1);
+		filter: blur(10px);
+		left: 0;
+		top: -10px;
+	}
+
+	/* Making the contact information responsive */
+	footer h2 {
+		letter-spacing: 6px;
+		color: white;
+		font-size: 0.8em !important;
+		font-weight: 400;
+	}
+
+	.follow {
+		padding-left: 70px !important;
+	}
+
+	footer h5 {
+		font-size: 0.5em !important;
+		letter-spacing: 3px;
+		font-weight: 400;
+		color: white;
+	}
+	/* Making the background image responsive */
+	body {
+		background: url("/static/night579.jpg") fixed no-repeat;
+		background-size: cover;
+	}
+}
+/* Media query for tablet sized devices making it responsive */
+@media screen and (min-width: 1025px) {
+	/* To display the frost effect as the background of the main content and responsive */
+	.container {
+		width: 100vw;
+		height: 1700px;
+		background: inherit;
+		position: absolute;
+		overflow: hidden;
+		margin-top: 150px;
+		left: 8%;
+		padding: 20px 25px;
+	}
+
+	.container:before {
+		width: 100vw;
+		height: 1750px;
+		content: "";
+		background: inherit;
+		position: absolute;
+		box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.1);
+		filter: blur(8px);
+		left: -20px;
+		top: -10px;
+	}
+
+	.follow h5 {
+		float: right !important;
+	}
+}
+
+@media screen and (min-width: 580px) and (max-width: 1024px) {
+	/* To display the frost effect as the background of the main content and responsive */
+	.container {
+		width: 100vw;
+		height: 2050px;
+		background: inherit;
+		position: absolute;
+		overflow: hidden;
+		margin-top: 150px;
+		left: 3.2%;
+		padding: 20px 25px;
+	}
+
+	.container:before {
+		width: 100vw;
+		height: 2100px;
+		content: "";
+		background: inherit;
+		position: absolute;
+		box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.1);
+		filter: blur(10px);
+		left: 0;
+		top: -10px;
+	}
+
+	.follow {
+		white-space: nowrap;
+	}
+
+	.follow h5 {
+		float: right !important;
+	}
+}
+
+/* Styling the heading block */
+h1 {
+	font-weight: 100;
+	font-size: 3.8em;
+	letter-spacing: 10px;
+	color: white;
+}
+
+h5 {
+	letter-spacing: 5px;
+	color: white;
+}
+/* placing the udacity logo */
+#logo {
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 1003px) {
+	h5 {
+		padding-right: 170px;
+	}
+}
+
+/* Editing margin */
+hr {
+	height: 1px;
+	background-color: white;
+}
+
+/* Styling the Intro block and About me portion */
+.intro, #work {
+	padding: 70px 50px 30px 50px;
+}
+
+h4 {
+	padding-bottom: 20px;
+	letter-spacing: 5px;
+	color: white;
+	word-spacing: 5px;
+}
+/* Rearranging the display photo */
+.my_dp {
+	padding-left: 60px;
+}
+
+.my_dp img {
+	border-radius: 20%;
+	box-shadow: 10px 10px 80px black;
+}
+
+.intro p {
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	font-size: 1.1em;
+	color: white;
+	line-height: 30px;
+	padding-top: 10px;
+}
+/* Making the display photo responsive */
+@media screen and (max-width: 778px) {
+	.my_dp img {
+		width: 120px;
+		margin-left: 20px;
+	}
+}
+
+/* Styling the home section and making it responsive */
+.quote {
+	padding-top: 100px;
+	padding-right: 300px;
+	color: #417999;
+}
+
+.quote h2 {
+	font-family: "Galdeano";
+	font-size: 3em;
+	padding-top: 65px;
+	color: white;
+}
+
+.quote h1 {
+	font-family: "Nova Slim";
+	font-size: 7em;
+	letter-spacing: 15px;
+	margin-left: -35px;
+}
+
+.subtitle h5 {
+	padding-top: 20px;
+	letter-spacing: 4px;
+	word-spacing: 8px;
+}
+
+.subtitle hr {
+	width: 300px;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 770px) {
+	.quote {
+		padding-top: 100px;
+		padding-right: 200px;
+		color: #417999;
+	}
+
+	.quote h2 {
+		font-family: "Galdeano";
+		font-size: 2em;
+		padding-top: 50px;
+		color: white;
+	}
+
+	.quote h1 {
+		font-family: "Nova Slim";
+		font-size: 5em;
+		letter-spacing: 8px;
+		margin-left: -5px;
+	}
+
+	.subtitle h5 {
+		padding: 20px 0px 5px 0px;
+		letter-spacing: 4px;
+		word-spacing: 8px;
+	}
+}
+
+/* Styling Featured Work */
+.card img {
+	max-width: 100%;
+}
+
+.card-title {
+	padding-top: 5px;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	font-weight: 200
+}
+
+#card1 {
+	padding-top: 20px;
+}
+
+.row a {
+	text-decoration: none;
+}
+
+.card {
+	transition: all 0.3s;
+	border-color: #505151;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card-body {
+	background-color: #e8f1f7;
+}
+
+/* Making the project image responsive */
+@media screen and (max-width: 1010px) {
+	.card-title {
+		height: 30px;
+		overflow: hidden;
+		padding-top: 0px;
+	}
+
+	.card-title {
+		color: white;
+	}
+
+	.card-body {
+		height: 50px;
+		padding-top: 10px;
+	}
+}
+
+/* Styling the footer/contact information block */
+#contact {
+	background-color: #262626;
+}
+
+footer h2 {
+	letter-spacing: 6px;
+	color: white;
+	font-size: 1.7em;
+	font-weight: 400;
+	padding: 10px 10px 20px 10px;
+}
+
+footer h5 {
+	font-size: 1em;
+	letter-spacing: 3px;
+	font-weight: 300;
+	color: white;
+	white-space: nowrap;
+}
+/* Coloring the social media vector images */
+.fa-instagram {
+	color: #d35fd1;
+}
+
+.fa-google-plus {
+	color: #e2473f;
+}
+
+.fa-twitter {
+	color: #41bde0;
+}

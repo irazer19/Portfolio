@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Nova%20Slim" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Galdeano" rel="stylesheet">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  		<link rel="stylesheet" href="/static/style.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  		<script src="/static/javascript.js"></script>
+  		<title>Portfolio</title>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<!--Creating a navigation bar-->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<!--Creating responsive navigation toggle button-->
+			<button class="navbar-toggler" type="button" data-target="#collapsibleNavbar" data-toggle="collapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!--Creating Navbar links-->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#work">WORK</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!--Creating a container for main contents-->
+		<div class="container">
+			<!-- Content a heading that includes a logo and name -->
+			<div class="heading">
+				<div class="row">
+				<!-- Adding the udacity logo -->
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<img src="static/udacity.svg" alt="Udaicy logo" width="80" id="logo">
+					</div>
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<div class="float-right">
+							<h1>Saurav Gupta</h1>
+							<h5 class="float-right">Full Stack developer</h5>
+						</div>
+					</div>
+				</div>
+				<!--Margin-->
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><hr></div>
+				</div>
+				<!--Intro quotation-->
+				<div class="row quote" id="home">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h2 class="float-right">believing</h2>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h1>Eternity</h1>
+					</div>
+				</div>
+				<div class="row text-center subtitle">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h5>Let's pour life on your website</h5>
+						<hr>
+					</div>
+				</div>
+			</div>
+
+			<!--block for Intro article and related photograph-->
+			<article class="intro" id="about">
+				<div class="row">
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<h4>About Me:</h4>
+					</div>
+				</div>
+				<!-- Block for containing words for introduction -->
+				<div class="row">
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<p>
+						Hi, I am Saurav and I am a Full Stack Web Developer. <br>
+						I can clone your imagination to create a Web application from it.
+						Our beautiful universe with all its stars and galaxies makes me think 
+						about its intelligent designer and has always been my inspiration 
+						behind my love for programming.
+						</p>
+						<p>
+						I love to wrap websites into pure logic and present it like never 
+						seen before. So, let's get started! 
+						</p>
+					</div>
+					<!-- Adding a display photo -->
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my_dp">
+						<img src="static/my_dp.jpg" alt="My display pic" width="200">
+					</div>
+				</div>
+			</article>
+
+			<!--Block for displaying Featured Work-->
+			<div id="work">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h4>Featured Work:</h4>
+					</div>
+				</div>
+				<!-- Creating row that contains 3 projects each -->
+				<!-- First Row-->
+				<div class="row" id="card1">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<a href="https://github.com/irazer19/Movie-trailer.git">
+							<div class="card">
+								<img src="static/movie-trailer.jpg" alt="Movie Trailer">
+								<div class="card-body text-center bg-dark">
+									<div class="card-title">Movie Trailer</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<a href="https://github.com/irazer19/Tic-Tac-Toe.git">
+							<div class="card">
+								<img src="static/tic_tac_toe.jpg" alt="Tic Tac Toe">
+								<div class="card-body text-center bg-dark">
+									<div class="card-title">Tic Tac Toe</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<a href="https://github.com/irazer19/Food-Zone.git">
+							<div class="card">
+								<img src="static/restaurant.jpg" alt="Restaurant app">
+								<div class="card-body text-center bg-dark">
+									<div class="card-title">Food Zone</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- Second Row-->
+				<div class="row" id="card1">
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<a href="https://github.com/irazer19/Logs-Analysis.git">
+							<div class="card">
+								<img src="static/logs-analysis.jpg" alt="Logs Analysis">
+								<div class="card-body text-center bg-dark">
+									<div class="card-title">Logs analysis</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						<a href="https://github.com/irazer19/Twitter-clone.git">
+							<div class="card">
+								<img src="static/twitter-clone.jpg" alt="Twitter clone">
+								<div class="card-body text-center bg-dark">
+									<div class="card-title">Twitter Clone</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Footer-->
+		<div class="container-fluid fixed-bottom" id="contact">
+			<footer class="footer">
+				<div class="row text-center">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-12">
+						<h2>CONTACT</h2>
+					</div>
+				</div>
+				<div class="row email">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-6">
+						<h5>Email: irazer19@gmail.com</h5>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 follow col-6">
+						<h5>Follow me: 
+						<!-- Adding social media vector graphics -->
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a></h5>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
